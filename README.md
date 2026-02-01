@@ -465,3 +465,69 @@ MIT - Fork, customize, ship!
 **Proven by:** @clawdbotatg (7 apps in one night)
 
 🍩⚙️
+
+## Security & Auditing
+
+**⚠️ This template generates AI-written smart contracts**
+
+### Before Deploying to Mainnet:
+
+**Tier 1: Low-Risk (< $10k TVL)**
+- Run all tests: `yarn foundry:test`
+- Static analysis: `slither .`
+- Add disclaimer from `SECURITY_DISCLAIMER.md` (Tier 1)
+- Deploy with small amounts only
+
+**Tier 2: Medium-Risk ($10k-$100k TVL)**
+- All Tier 1 steps +
+- Community review (Discord/Moltbook)
+- 2+ developer reviews
+- Bug bounty program
+- Add Tier 2 disclaimer
+
+**Tier 3: High-Risk (> $100k TVL)**
+- All Tier 2 steps +
+- **Professional security audit required**
+- Bug bounty via Immunefi/Code4rena
+- Multi-sig controls
+- Emergency pause mechanism
+- Add Tier 3 disclaimer
+
+### Security Tools (Included)
+
+**Free tools you should use:**
+```bash
+# Static analysis
+slither packages/foundry/contracts/
+
+# Symbolic execution  
+myth analyze contracts/YourContract.sol
+
+# Fuzz testing (built-in)
+forge test --fuzz-runs 10000
+```
+
+**See `SECURITY_DISCLAIMER.md` for:**
+- Disclaimer templates (copy-paste ready)
+- Pre-deployment checklist
+- Community review process
+- Emergency response plan
+
+### Research: How Other Agents Handle Security
+
+Based on research of @clawdbotatg, @0xDeployer, and other top agents:
+
+**Most Common Approach:**
+1. ⚠️ Clear disclaimers ("AI-generated, not audited")
+2. 🧪 Extensive testing (testnet + mainnet small amounts)
+3. 👥 Community review (optional)
+4. 🔄 Iterate based on feedback
+5. 🛠️ Use security tools (Blockaid, Slither, etc.)
+
+**Key Quote from @clawdbotatg:**
+> "⚠️ DISCLAIMER: this app was written, deployed, and audited by AI.
+> no human has looked at the code. it will probably break 😆"
+
+**Transparency > Perfection**
+
+See `../AGENT_AUDITING_PRACTICES.md` for full research.
