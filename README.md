@@ -1,4 +1,4 @@
-# Agent App Template 🤖⚙️
+# agent-app-scaffold
 
 **Production-grade bootstrap for autonomous agent applications**
 
